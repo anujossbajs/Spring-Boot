@@ -1,4 +1,24 @@
-# Getting Started
+### Getting Started
+This is a library application which can add book details.there are options for updating and deleting books. the book details can be viewed by passing id or email too.
+
+### Tools and technologies used
+java
+
+spring tool suite
+
+bootstrap
+
+html, css
+
+thymeleaf (template engine)
+
+spring web, spring dev tools, gradle (dependencies and plugins)
+
+mysql (database)
+
+### test the application by running
+http://localhost:8080/
+
 
 ### Reference Documentation
 For further reference, please consider the following sections:
