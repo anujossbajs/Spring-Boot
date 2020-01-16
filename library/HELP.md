@@ -16,6 +16,8 @@ spring web, spring dev tools, gradle (dependencies and plugins)
 
 mysql (database)
 
+phpmyadmin(optional)
+
 ### test the application by running
 http://localhost:8080/
 
