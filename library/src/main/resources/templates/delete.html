@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+   <ul class="nav navbar-nav">
+    <li><a th:href="@{/all}">Return Back</a>
+    </li>
+   </ul>
+   </nav>
+
+   <form th:action="@{/delete/}+${email}" method="post">
+  
+   <div class="container">
+         <div class="login-form"> 
+           <h2>Delete book </h2> 
+
+      <div class="form-group">
+        <label>email : <input type="text" name="email" th:value="${bookdetails.email}"></label>
+      </div>
+      <div class="form-group">
+         <input type="submit" value="Delete Book">
+       </div>
+      
+    </div>
+    </div> 
+  </form>
+</body>
+</html>  

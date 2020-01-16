@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+
+ <body>
+    
+  <nav class="navbar navbar-inverse">
+   <ul class="nav navbar-nav">
+    <li><a th:href="@{/all}">Return Back</a>
+    </li>
+   </ul>
+  </nav> 
+
+  <div class="container">
+     <div class="login-form">
+        <form th:action="@{/addbook}" method="post">
+             <h2 class="text-center" th:if="${message}" th:text=${message}></h2>
+             <div class="form-group">
+               <label> BookName : <input type="text" name="bookname"> </label>
+             </div>
+             <div class="form-group">
+                <label> AuthorName : <input type="text" name="authorname"> </label>
+             </div>
+             <div class="form-group"> 
+               <label> Email : <input type="email" name="email"> </label>
+             </div>
+             <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="submit book details">
+             </div>
+        </form>
+     </div>
+  </div>
+        
+    </body>
+</html> 

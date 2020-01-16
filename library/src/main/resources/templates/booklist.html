@@ -1,0 +1,50 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+  <ul class="nav navbar-nav">
+    <li><a th:href="@{/addbook}">Add Book</a>
+    </li>
+  </ul>
+  </nav> 
+<div class="container">
+   <h1 class="text-center" >Book Details</h1>
+   <table class="table">
+   <thead>
+      <tr>
+        <th>BookName</th>
+        <th>Email</th>
+        <th>Authorname</th>
+         <th>view by email</th>
+          <th>view by Id</th>
+        <th>update</th>
+        <th>delete</th>
+      </tr>
+   </thead>
+   <th:block th:each="book : ${books}">
+      <tr>
+        <td th:if="${book.bookname}" th:text="${book.bookname}"></td>
+        <td th:unless="${book.bookname}" th:text="dummy"></td>
+        <td th:text="${book.email}"></td>
+        <td th:text="${book.authorname}"></td>
+        <td> <a th:href="@{/select/} + ${book.email  }" class="btn btn-info">View</a></td>
+        <td> <a th:href="@{/selectbyid/} + ${book.id  }" class="btn btn-info">View</a></td>   
+        <td> <a th:href="@{/update/} + ${book.id }" class="btn btn-warning">Edit</a></td>
+        <td> <a th:href="@{/delete/} + ${book.email }" class="btn btn-danger">Delete</a></td>
+      </tr>
+    </th:block>
+  </table>
+  </div>
+</body>
+</html> 
