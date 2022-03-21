@@ -1,27 +1,27 @@
 #  Simple Spring-Boot-Application
 
 ### Getting Started
-This is a library application which can add book details.there are options for updating and deleting books. the book details can be viewed by passing id or email too. This is a simple application to show spring CRUD operations using hibernate
+This is a library application which can add book details.there are options for updating and deleting books. the book details can be viewed by passing id or email . This is a simple application to show spring CRUD operations using hibernate
 
 
 ### Tools and technologies used
-java
+Java
 
-spring tool suite
+Spring tool suite
 
-bootstrap
+Bootstrap
 
-html, css
+Html, Css
 
-thymeleaf (template engine)
+Thymeleaf (template engine)
 
 spring web, spring dev tools, gradle (dependencies and plugins)
 
-mysql (database)
+Mysql (database)
 
-phpmyadmin(optional)
+Phpmyadmin(optional)
 
-### test the application by running
+### T est the application by running
 http://localhost:8080/
 
 
