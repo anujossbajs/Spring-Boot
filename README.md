@@ -1,4 +1,4 @@
-#  Simple Spring-Boot-Application
+# Spring-Boot-Application
 
 ### Getting Started
 This is a library application which can add book details.there are options for updating and deleting books. the book details can be viewed by passing id or email . This is a simple application to show spring CRUD operations using hibernate
