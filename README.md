@@ -4,24 +4,24 @@
 This is a library application which can add book details. There are options for updating and deleting books. The book details can be viewed by passing id or email . This is a simple application to show spring CRUD operations using hibernate
 
 
-### Tools and technologies used
+### Tools and Technologies used
 Java
 
 Spring tool suite
 
 Bootstrap
 
-Html, Css
+Html, CSS
 
 Thymeleaf (template engine)
 
-spring web, spring dev tools, gradle (dependencies and plugins)
+Spring web, Spring dev tools, Gradle (dependencies and plugins)
 
 Mysql (database)
 
 Phpmyadmin(optional)
 
-### T est the application by running
+### Test the application by running
 http://localhost:8080/
 
 
