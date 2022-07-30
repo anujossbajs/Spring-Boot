@@ -24,6 +24,14 @@ Phpmyadmin(optional)
 ### Test the application by running
 http://localhost:8080/
 
+Book Details 
+
+![library_list](https://user-images.githubusercontent.com/59922391/181872334-2dc12bdf-23b2-4795-8acb-c5c2d0d9bb0d.png)
+
+Update Screen  
+
+![update](https://user-images.githubusercontent.com/59922391/181872342-60ee8f61-9bb9-4f01-9749-be5703821cd1.png)
+
 
 ### Reference Documentation
 For further reference, please consider the following sections:
